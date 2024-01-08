@@ -23,8 +23,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.533);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(239, 239, 239, 0.533);
 }
 
 .form__container {
@@ -86,20 +86,17 @@ h3 {
   text-decoration: none;
 }
 
-.button {
+.button button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  text-transform: capitalize;
   width: 100%;
   background-color: white;
   text-align: center;
   border-radius: 29px;
   padding: 14px 0;
-}
-
-.button button {
-  outline: none;
-  border: none;
-  background-color: transparent;
-  font-size: 16px;
-  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .create a {
@@ -109,4 +106,18 @@ h3 {
 
 .create {
   margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 70%;
+  }
+
+  .form__container {
+    width: 100%;
+  }
+
+  .input input {
+    width: 85%;
+  }
 }
